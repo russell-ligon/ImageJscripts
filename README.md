@@ -11,3 +11,5 @@ Collection of scripts/macros for processing thermal csvs, viewing thermal csvs, 
 #Frame_Inspector...macro to open RAW csvs as image stacks in imageJ
 
 #PolygonCoordinate_Grabber...macro to grab coordinates from images and put X/Y coordinates into output csvs
+
+#read_semicolon.class, ImageStack.class, slice_rower.py = python/jython scripts for reading/writing csvs to stacks
