@@ -42,7 +42,7 @@
 		Dialog.addNumber("Minimum number of pixels to be considered a cluster",2);
 	*/	
 		Dialog.addChoice("What is the delimiter?", newArray("semicolon!","comma!"));
-		
+		Dialog.addChoice("What is the file prefix?", newArray("Record_2018","Record_2018","2018","2019"));
 		Dialog.addNumber("Number of frames per short avi?",10000);
 		Dialog.addChoice("Add timestamp",newArray("true","false"));
 		
@@ -59,7 +59,7 @@
 	minpix = Dialog.getNumber();
 */	
 	runas= Dialog.getChoice();
-
+	fileprefix= Dialog.getChoice();
 	FrameNum = Dialog.getNumber();	
 	TimeStamp = Dialog.getChoice();
 	
@@ -111,7 +111,7 @@
 					if(TimeStamp=="true"){		
 						
 						endloc=indexOf(file, ".");
-						startloc=indexOf(file, "Record_2018");;
+						startloc=indexOf(file, fileprefix);;
 						timeinfo=substring(file, startloc,endloc);
 						
 						fontSize = fontS; 
