@@ -58,18 +58,21 @@ for(q=0; q<folderList.length; q++){ // cycle through every folder in folderList
 		foldernombre=folderList[q];
 		folderDIR2=Parentdir+foldernombre;
 		folderDIR3= replace(folderDIR2, "\\", "/");
-		folderDIR4= replace(folderDIR3, "/", "\\");
+		folderDIR4= folderDIR3;
+		//folderDIR4= replace(folderDIR3, "/", "\\");
 		print(folderDIR4);
 
 				
 	
 		outviddirOUT=outdir+foldernombre;
 		outviddirOUT3= replace(outviddirOUT, "\\", "/");
-		outviddirOUT4= replace(outviddirOUT3, "/", "\\");
+		outviddirOUT4=outviddirOUT3;
+		//outviddirOUT4= replace(outviddirOUT3, "/", "\\");
 		
 		File.makeDirectory(outviddirOUT4);
 
 		dir=folderDIR4;	
+		print(outviddirOUT4);
  
  
 	list = getFileList(folderDIR4);
